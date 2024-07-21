@@ -1,0 +1,67 @@
+.popular {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .popular h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .popular hr {
+    width: 200px;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto 40px;
+    border: none;
+  }
+  
+  .popular-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Assuming each Item component has a wrapper class, adjust if different */
+  .item {
+    width: calc(25% - 30px); /* Adjust based on how many items you want per row */
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Styles for item content - adjust based on your Item component structure */
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .item .price {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .item .new-price {
+    font-weight: bold;
+    color: #ff4500;
+  }
+  
+  .item .old-price {
+    text-decoration: line-through;
+    color: #888;
+  }
